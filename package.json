@@ -1,0 +1,51 @@
+{
+  "name": "sii.crm.examples.ui.webresource",
+  "version": "1.0.0",
+  "description": "aidevs3",
+  "main": "",
+  "author": {
+    "name": "Sii D365 CC"
+  },
+  "private": "true",
+  "devDependencies": {
+    "@fluentui/react": "^8.78.1",
+    "@microsoft/eslint-plugin-power-apps": "^0.2.6",
+    "@types/node": "^18.0.3",
+    "@types/xrm": "^9.0.60",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "eslint": "^8.19.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "filemanager-webpack-plugin": "^7.0.0",
+    "fork-ts-checker-webpack-plugin": "^7.2.11",
+    "html-react-parser": "^1.4.8",
+    "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.8.3",
+    "prettier-eslint": "^15.0.1",
+    "ts-loader": "^9.3.1",
+    "ts-node": "^10.8.2",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-build-notifier": "^2.3.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "@bpedziwiatr/gitversion-webpack-plugin": "^1.1.0",
+    "@cc-d365crm/base-ui": "^1.0.12",
+    "dynamics-web-api": "^1.7.5",
+    "html-react-parser": "^3.0.0",
+    "numeral": "^2.0.6"
+  },
+  "scripts": {
+    "start": "npm install && npm run-script build",
+    "build": "npx prettier --write \"./**/*.{js,jsx,ts,tsx,json}\" && npx eslint src/**/*.ts && webpack --mode=development --env development --progress",
+    "build-ci": "npx eslint src/**/*.ts && webpack --mode=production --env production --progress",
+    "build-watch": "webpack --mode=development --env development --progress -w",
+    "eslint-check": "npx eslint src/**/*.ts",
+    "eslint-fix": "npx eslint src/**/*.ts --fix",
+    "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\""
+  }
+}

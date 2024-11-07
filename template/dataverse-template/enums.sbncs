@@ -1,0 +1,10 @@
+{{info.welcome_xml}}
+
+{{for enm in entity.enums}}
+export enum {{entity.logical_name }}_{{enm.display_name | string.downcase}}
+{
+    {{for item in enm.items}}
+    {{item.name}} = {{item.value}},
+    {{end}}
+};
+{{end}}

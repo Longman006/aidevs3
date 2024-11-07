@@ -1,0 +1,27 @@
+{
+  "Entities": [
+    "account",
+    "activityparty",
+    "activitypointer",
+    "appointment",
+    "contact",
+    "incident",
+    "languagelocale",
+    "phonecall",
+    "salesorder",
+    "systemuser",
+    "task"
+  ],
+  "ConnectionString": "AuthType=ClientSecret; url=;ClientId=; ClientSecret=",
+  "Namespace": "sii.crm.examples.ui.webresource",
+  "OutDirectory": "/src/dataversegen/",
+  "TemplateName": "dataverse-template",
+  "EnableConnectionStringValidation": true,
+  "ThrowOnEntityNotFound": true,
+  "TemplateDirectoryName": "template",
+  "TemplateEngine": {
+    "IsSingleOutput": false,
+    "Name": "scriban",
+    "Type": "ts"
+  }
+}

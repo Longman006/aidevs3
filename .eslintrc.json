@@ -1,0 +1,88 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["google", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+
+  "ignorePatterns": ["ManifestTypes.d.ts"],
+  "plugins": ["@typescript-eslint", "prettier", "@microsoft/power-apps"],
+  "rules": {
+    "@microsoft/power-apps/avoid-2011-api": "error",
+    "@microsoft/power-apps/avoid-browser-specific-api": "error",
+    "@microsoft/power-apps/avoid-crm2011-service-odata": "warn",
+    "@microsoft/power-apps/avoid-crm2011-service-soap": "warn",
+    "@microsoft/power-apps/avoid-dom-form-event": "warn",
+    "@microsoft/power-apps/avoid-dom-form": "warn",
+    "@microsoft/power-apps/avoid-isactivitytype": "warn",
+    "@microsoft/power-apps/avoid-modals": "warn",
+    "@microsoft/power-apps/avoid-unpub-api": "warn",
+    "@microsoft/power-apps/avoid-window-top": "warn",
+    "@microsoft/power-apps/do-not-make-parent-assumption": "warn",
+    "@microsoft/power-apps/use-async": "error",
+    "@microsoft/power-apps/use-cached-webresource": "warn",
+    "@microsoft/power-apps/use-client-context": "warn",
+    "@microsoft/power-apps/use-global-context": "error",
+    "@microsoft/power-apps/use-grid-api": "warn",
+    "@microsoft/power-apps/use-navigation-api": "warn",
+    "@microsoft/power-apps/use-offline": "warn",
+    "@microsoft/power-apps/use-org-setting": "error",
+    "@microsoft/power-apps/use-relative-uri": "warn",
+    "@microsoft/power-apps/use-utility-dialogs": "warn",
+    "indent": "off",
+    "semi": "warn",
+    "linebreak-style": ["error", "windows"],
+    "require-jsdoc": 0,
+    "prettier/prettier": "warn",
+    "eqeqeq": [2, "smart"],
+    "max-len": [
+      "warn",
+      {
+        "code": 250,
+        "tabWidth": 2,
+        "ignoreUrls": true
+      }
+    ],
+    "quotes": ["error", "double"],
+    "object-curly-spacing": ["error", "always", { "objectsInObjects": false }],
+    "camelcase": [
+      "error",
+      {
+        "properties": "never",
+        "ignoreImports": true,
+        "allow": ["^sii_", "SubGrid_", "^account_", "^contact_", "message_keys"],
+        "ignoreDestructuring": true
+      }
+    ],
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/prefer-namespace-keyword": "off",
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          "?": "ignore",
+          ":": "ignore",
+          "||": "ignore",
+          "&&": "ignore"
+        }
+      }
+    ],
+    "comma-dangle": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "new-cap": "off"
+  }
+}

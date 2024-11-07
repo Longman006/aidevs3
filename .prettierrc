@@ -1,0 +1,10 @@
+{
+  "bracketSpacing": true,
+  "printWidth": 160,
+  "trailingComma": "none",
+  "tabWidth": 2,
+  "useTabs": false,
+  "endOfLine": "auto",
+  "singleAttributePerLine": true
+  
+}
