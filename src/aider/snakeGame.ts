@@ -2,6 +2,7 @@ class SnakeGame {
   private canvas: HTMLCanvasElement;
   private context: CanvasRenderingContext2D;
   private box: number;
+  private game: NodeJS.Timeout;
   private snake: { x: number; y: number }[];
   private direction: string;
   private food: { x: number; y: number };
