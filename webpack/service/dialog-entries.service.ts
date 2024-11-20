@@ -48,7 +48,7 @@ export class DialogEntriesService {
         template: "./template/html-react-template/react-template.html",
         filename: `${entry.name}.html`,
         title: friendlyName,
-        webresourceName: `${solutionPrefix}/${entrySlices[1]}/${entrySlices[2]}}`
+        webresourceName: `${entrySlices[2]}/${entrySlices[3]}`
       });
     });
   }
