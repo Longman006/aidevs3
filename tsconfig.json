@@ -16,5 +16,5 @@
     "esModuleInterop": true
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["webpack.config.ts", "src/**/*"]
+  "include": ["webpack.config.ts", "src/**/*", "src/aider/**/*"]
 }
