@@ -1,4 +1,4 @@
-// gitversion - 0.1.0+6.Branch.main.Sha.281ee0f21ff9e2ae6c05076681276b1e6ac974f4
+// gitversion - 0.1.0+7.Branch.main.Sha.9d30c94cbbdced804ea709a459b236618db3910c
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
